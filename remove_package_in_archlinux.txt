@@ -1,0 +1,4 @@
+#remove package white dependence in arch linux
+
+
+sudo pacman -Rcns namafile

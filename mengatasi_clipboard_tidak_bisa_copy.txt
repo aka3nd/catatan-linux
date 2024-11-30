@@ -1,0 +1,3 @@
+install xclip atau xsel
+
+dalam kasus saya yang berhasil mengggunakan xsel

@@ -1,0 +1,5 @@
+cara melihat repository
+==> cat /etc/apt/sources.list
+
+cara edit repository
+==> sudo nano /etc/apt/sources.list

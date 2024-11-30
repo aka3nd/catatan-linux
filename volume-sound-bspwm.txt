@@ -1,0 +1,12 @@
+### fix volume sound bspwm ###
+
+==> tambahkan parameter berikut di config sxhkdrc :
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume 0 +5%
+XF86AudioLowerVolume
+    pactl set-sink-volume 0 -5%
+XF86AudioMute
+    pactl set-sink-mute 0 toggle
+
+source: https://www.reddit.com/r/bspwm/comments/lsz5jw/volume_control_keys/

@@ -1,0 +1,10 @@
+cara format usb dengan gparted
+
+==> install gparted dengaan perintah:
+$ sudo apt install gparted
+
+==> buka gparted,pilih dev/sdb1
+==> klik kanan pada file dev/sdb1 pilih umount(jika tidak bisa)
+    langsung filih format
+==> fat32 atau ntfs
+==> lalu pilih (√)

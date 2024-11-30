@@ -1,0 +1,9 @@
+#### cara bust scrift bash
+
+#!/bin/bash
+
+echo "anjayy"
+
+
+ubah permision
+chmod 755 namafile

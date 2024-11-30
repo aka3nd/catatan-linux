@@ -1,0 +1,4 @@
+tambahkan parameter berikut di config i3wm:
+
+# Enable Tap to Click
+exec_always --no-startup-id xinput --set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1

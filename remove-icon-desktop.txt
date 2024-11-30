@@ -1,0 +1,5 @@
+cari apps .desktop di folder:
+/usr/share/applications
+
+jalankan:
+sudo update-desktop-database

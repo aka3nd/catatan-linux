@@ -1,0 +1,5 @@
+# mengatasi device not manage networkmanager di linux
+
+=> commnet semua di /etc/netwrok/interface
+
+=> lalu reboot

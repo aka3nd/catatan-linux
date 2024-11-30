@@ -1,0 +1,9 @@
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse wireplumber
+
+#jalankan service
+systemctl --user --now enable pipewire pipewire-pulse wireplumber
+
+#reboot
+
+#credit
+https://www.maketecheasier.com/install-configure-pipewire-linux/

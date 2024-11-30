@@ -1,0 +1,24 @@
+### cara mengaktifkan wifi dengan nmcli ###
+
+1# hidupkan signal wifi dengan perintah dibawah
+$ nmcli radio wifi on
+
+2# scan ssid dengan perintah:
+$ nmcli device wifi list
+
+3#konek ke ssid
+$ nmcli device wifi connect ssid_dari_hotspot
+
+4# cek wifi yg tersedia:
+$ nmcli connection
+
+5# diskonek/memutus wifi
+$ nmcli device disconnect nama_adapter
+
+
+
+
+
+
+#source:
+https://www.belajarlinux.org/cara-setting-lan-wifi-ubuntu-linux-mint-menggunakan-terminal/

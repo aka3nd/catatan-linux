@@ -1,0 +1,6 @@
+cara install font di linux secara manual
+
+1. download font
+2. extract font
+3. copy font ke ~/.local/share/fonts/
+4. jalankan fc-cache -f -v

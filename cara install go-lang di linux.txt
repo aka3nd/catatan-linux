@@ -1,0 +1,29 @@
+===> masuk ke web nya https://golang.org
+
+===> download file nya lalu extract
+
+===> pindah kan folder go beserta isinya sudo mv go /usr/local
+
+===> tambahkan variable berikut:
+
+===> untuk shell bash: sudo nano ~/.bashrc
+
+tambahkan parameter berikut:
+
+# Go Global variables
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+lalu ketik source ~/.bashrc
+
+
+===> untuk shell zsh: sudo nano ~/.zshrc
+
+tambahkan parameter berikut:
+# Go Global variables
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+
+lalu ketik source ~/.zshrc

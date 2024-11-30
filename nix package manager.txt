@@ -1,0 +1,7 @@
+ nix-channel --update = update channel
+
+ nix-env --upgrade = untuk upgrade aplikasi
+
+nix-env –uninstall 'firefox-78.4.0ser' = untuk menghapus firefox(contohnya)
+
+nix-env --rollback = untuk rollback

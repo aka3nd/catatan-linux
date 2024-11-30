@@ -1,0 +1,5 @@
+### cara enable tap to click bspwm ###
+tambahkan konfigure berikut di bspwmrc:
+
+xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Tapping Enabled" 1
+

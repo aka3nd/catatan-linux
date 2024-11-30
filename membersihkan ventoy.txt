@@ -1,0 +1,4 @@
+## cara membersihkan ventoy yang full (tidak bisa copy dis full)##
+
+masuk ke directory ventoy tekan ls -al (unutk menampilkan file hiden).
+lalu delete semua

@@ -1,0 +1,7 @@
+### install font di linux ####
+
+1. download font, lalu extract
+
+2. pindahkan hasil extract ke ~/.local/share/fonts
+
+3. jalankan sudo fc-cache -f -v

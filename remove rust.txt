@@ -1,0 +1,3 @@
+cara remove rust
+
+rustup self uninstall

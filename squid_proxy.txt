@@ -1,0 +1,14 @@
+# cara menggunakan squid proxy
+
+1. sudo apt install squid
+
+2. edit configure squid
+  sudo nano /etc/squid/squid.conf
+
+3.tambahkan alternative dns
+  dns_nameservers 8.8.8.8 8.8.4.4   # Google DNS
+  dns_nameservers 1.1.1.1 1.0.0.1   # Cloudflare DNS
+
+4. restart squid proxy
+  sudo systemctl restart squid
+

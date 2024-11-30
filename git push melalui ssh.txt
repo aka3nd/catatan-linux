@@ -1,0 +1,7 @@
+### memasukan ssh di github ###
+
+1. generate ssh dengan email yang di daptarkan di github:
+ssh-keygen -t ed25519 -C "your_email@example.com"
+
+2.masukan ssh yang di generete ke github:
+ada dalam folder .ssh

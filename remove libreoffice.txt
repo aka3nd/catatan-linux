@@ -1,0 +1,5 @@
+sudo apt purge libreoffice* ==> perintah di bash
+
+sudo apt-get remove --purge libreoffice\* ==> perintah di zsh
+
+source : https://qastack.id/ubuntu/180403/how-to-uninstall-libreoffice

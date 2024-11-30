@@ -1,0 +1,25 @@
+cara install docker di archlinux
+
+1. sudo pacman -S docker
+
+install base-devel,jika sudah di install lewati ini
+
+2. sudo pacman -S base-devel
+
+jalankan docker daemon(service)
+
+3.sudo systemctl start docker.service
+
+lalu enable daemon(service)
+
+4. sudo systemctl enable docker.service
+
+tambahkan user ke group
+
+5. sudo usermod -aG docker $USER
+
+restar komputer/laptop
+
+jalankan hello docker untuk mengecek apakah berfungsi
+
+6. docker run hello-world

@@ -1,0 +1,19 @@
+cara install firefox terbaru
+
+==> download file firefox.tar.bz2 di www.firefox.com
+
+==> extract firefox.tar.bz2 dengan mengetik:
+    tar -xvjf namaaplikasi.tar.bz2
+
+==> pindahkan folder hasil extract ke folder opt, dengan mengetik:
+    sudo mv firefox /opt
+    
+==> lalu buat link dengan mengetik:
+    sudo ln -s /opt/firefox/firefox /usr/bin/firefox    
+    
+==> jalan kan firefox dengan mengetik firefox diterminal linux atau buat shortcut    
+
+
+catatan:
+cara manual ini dilakukan di debian,karna firefox didebian hanya mendukung
+firefox-esr bukan firefox versi global (umum)

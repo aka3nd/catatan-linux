@@ -1,0 +1,130 @@
+cara menambahkan caracter khusus di keyboard dengan os linux
+
+==> tekan CTRL+SHIFT+U lalu masukan kode hexadecimal:
+
+==>jika sudah tekan ENTER
+
+==================================================
+=============kode hexadecimal=====================
+
+
+Simbol  	   Nama  	           Kode 
+€ 	         Euro 	            20AC
+£ 	         Pound sterling 	  00A3
+₽ 	         Rubel 	           20BD
+$ 	         Dolar 	           0024
+₩ 	         Won 	             20A9
+¥ 	         Yen 	             00A5 
+
+==================================================
+simbol matematika
+
+
+Simbol  	   Nama  	                        Kode 
+÷ 	         Bagi 	                         00F7
+× 	         Kali 	                         00D7
+± 	         Kurang lebih 	                 00B1
+≈ 	         Kurang lebih sama dengan 	     2248
+≠ 	         Tidak sama dengan 	            2260
+∈ 	         Elemen dari 	                  2208
+∉ 	         Bukan elemen dari 	            2209
+∞ 	         Tak terhingga 	                221E
+≤ 	         Kurang dari atau sama dengan 	 2264
+≥ 	         Lebih dari atau sama dengan 	  2265
+π 	         Pi 	                           03C0
+√ 	         Akar kuadrat 	                 221A
+∛ 	         Akar kubik 	                   221B 
+
+===================================================
+tanda baca khusus
+
+Simbol    Nama  	                          Kode 
+¡ 	      Tanda seru terbalik 	             00A1
+¿ 	      Tanda tanya terbalik 	            00BF
+« 	      Tanda kutip miring kiri 	         00AB
+» 	      Tanda kutip miring kanan 	        00BB
+《 	      Kurung siku ganda kiri 	         300A
+》 	      Kurung siku ganda kanan 	        300B
+„ 	      Tanda petik kursif kiri bawah 	   201E
+“ 	      Tanda petik kursif kiri atas 	    201C
+‰ 	      Perseribu 	                       2030
+– 	      Tanda hubung (en-dash) 	          2013
+— 	      Tanda pisah (em-dash) 	           2014 
+
+===================================================
+simbol simbol umum
+
+
+Simbol   Nama                          Kode 
+§ 	      Segmen atau bagian dokumen 	  00A7
+¶ 	      Penanda paragraf (pilcrow) 	  00B6
+© 	      Hak cipta 	                   00A9
+® 	      Merek terdaftar 	             00AE
+™ 	      Merek dagang 	                2122
+_ 	      Karakter pengganti 	          FFFD
+⌘ 	      Tombol perintah 	             2318 
+
+===================================================
+notas musik
+
+
+Simbol   Nama  	                               Kode 
+♩ 	      Not seperempat 	                      2669
+♪ 	      Not seperdelapan 	                    266A
+♫ 	      Dua not seperdelapan bersambung 	     266B
+♬ 	      Dua not seperenambelas bersambung 	   266C
+♭ 	      Mol (flat) 	                          266D
+♮ 	      Nada asli/natural 	                   266E
+♯ 	      Kres (sharp) 	                        266F
+
+===================================================
+simbol catur
+
+
+Simbol   Nama  	              Kode  	 Simbol   Nama  	              Kode 
+♔ 	      Raja putih 	         2654 	  ♚ 	      Raja hitam 	         265A
+♕ 	      Ratu putih 	         2655 	  ♛ 	      Ratu hitam 	         265B
+♖ 	      Benteng putih 	      2656 	  ♜ 	      Benteng hitam 	      265C
+♗ 	      Menteri/uskup putih 	2657 	  ♝ 	      Menteri/uskup hitam 	265D
+♘ 	      Kuda putih 	         2658 	  ♞ 	      Kuda hitam 	         265E
+♙ 	      Pion putih 	         2659 	  ♟ 	      Pion hitam 	         265f
+
+===================================================
+simbol panah
+
+
+Simbol   Nama  	                                       Kode 
+← 	      Panah kiri 	                                  2190
+↑ 	      Panah atas 	                                  2191
+→ 	      Panah kanan 	                                 2192
+↓ 	      Panah bawah 	                                 2193
+↔ 	      Panah kiri kanan 	                            2194
+↕ 	      Panah atas bawah 	                            2195
+↖ 	      Panah diagonal kiri atas 	                    2196
+↗ 	      Panah diagonal kanan atas 	                   2197
+↘ 	      Panah diagonal kanan bawah 	                  2198
+↙ 	      Panah diagonal kiri bawah 	                   2199
+↺ 	      Panah memutar (berlawanan arah jarum jam) 	   21BA
+↻ 	      Panah memutar (searah jarum jam) 	            21BB 
+
+===================================================
+simbol simbol lain
+
+
+Simbol  	   Nama  	                                Kode 
+☺ 	         Wajah tersenyum (putih/transparan) 	   263A
+☻ 	         Wajah tersenyum (hitam) 	              263B
+♥ 	         Hati 	                                 2665
+♦ 	         Wajik 	                                2666
+♣ 	         Keriting 	                             2663
+♀ 	         Wanita 	                               2640
+♂ 	         Pria 	                                 2642
+⚥ 	         Pria dan wanita 	                      26A5
+
+===================================================
+
+==> contoh penggunaan nya tekan ctrl+shift+u 263a
+
+
+
+source: https://id.wikihow.com/Mengetik-Simbol-dengan-Tombol-ALT

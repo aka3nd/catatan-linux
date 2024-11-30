@@ -1,0 +1,5 @@
+=== >> masuk boot(bios)
+
+=== >> pilih boot maintenance manager
+
+=== >>pilih boot auto time lalu seting

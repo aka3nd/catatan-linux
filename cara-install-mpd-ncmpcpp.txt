@@ -1,0 +1,160 @@
+### install dan konfigurasi dasar mpd dan ncmpcpp###
+
+==> install mpd dan ncmpcpp.
+$ sudo pacman -S mpd ncmpcpp
+
+### konfigurasi mpd ###
+
+
+==> untuk alasan kerapian saya menyimpan konfigurasi di ~/.config/mpd.
+
+==> pertama buat folder atau directory:
+$ mkdir -p ~/.config/mpd/playlists
+
+==> masuk directory mpd:
+$ cd ~/.config/mpd
+
+==> buat file:
+$ touch mpd.conf mpd.db mpd.log mpd.pid mpdstate
+
+==> edit file mpd.conf:
+$ nano mpd.conf
+
+==> masukan perintah berikut di file mpd.conf jika sudah lalu save
+
+bind_to_address "127.0.0.1" 
+port "6600" 
+music_directory "~/Music"    ### pastikan path mengarah ke folder tempat musik kamu berada
+playlist_directory  "~/.config/mpd/playlists" 
+db_file             "~/.config/mpd/mpd.db"   
+log_file            "~/.config/mpd/mpd.log" 
+pid_file            "~/.config/mpd/mpd.pid"  
+state_file          "~/.config/mpd/mpdstate"   
+
+audio_output {
+        type            "pipewire"
+        name            "PipeWire Sound Server"
+}
+
+audio_output { 
+   type                    "fifo" 
+   name                    "my_fifo" 
+   path                    "/tmp/mpd.fifo" 
+   format                  "44100:16:2" 
+}
+
+audio_output { 
+       type            "alsa" 
+       name            "Alsa for audio sound card" 
+       mixer_type      "software"      # optional 
+}
+
+==> lalu kill service mpd dengan mengetik
+$ killall mpd
+
+
+### konfigurasi ncmpcpp ###
+
+==> untuk alasan kerapian saya menyimpan konfigurasi di ~/.config/ncmpcpp.
+
+==> buat folder
+$ mkdir -p ~/.config/ncmpcpp
+
+==> masuk directory ncmpcpp
+$ cd ~/.config/ncmpcpp
+
+==> buat file config
+$ touch config
+
+==> edit file config
+$ nano config
+
+==> masukan perintah berikut lalu save
+
+# Files
+ mpd_music_dir = "~/Music"  
+ lyrics_directory  = ~/.config/ncmpcpp/lyrics
+ ncmpcpp_directory  = ~/.config/ncmpcpp
+ mpd_host = "localhost"
+ mpd_port = "6600"  
+ mpd_connection_timeout = "5"  
+ mpd_crossfade_time = "5"  
+
+ # Playlist
+ playlist_disable_highlight_delay = "0"
+ playlist_display_mode = "columns"  
+ playlist_show_remaining_time = "yes"
+ browser_display_mode = "columns"  
+ autocenter_mode = "yes"  
+ fancy_scrolling = "yes"  
+ follow_now_playing_lyrics = "yes"  
+ display_screens_numbers_on_start = "yes"  
+ ignore_leading_the = "yes"  
+ lyrics_database = "1"  
+ song_columns_list_format = "(10)[blue]{l} (30)[green]{a} (30)[magenta]{b} (50)[yellow]{t}"  
+ colors_enabled = "yes"  
+ main_window_color = "white"
+ main_window_highlight_color =  "blue"
+ header_window_color = "cyan"  
+ volume_color = "red"  
+ progressbar_color = "cyan"  
+ statusbar_color = "white"  
+ active_column_color = "cyan"  
+ active_window_border = "blue"
+ alternative_header_first_line_format = "$0$aqqu$/a {$7%a - $9}{$5%t$9}|{$8%f$9} $0$atqq$/a$9"
+ alternative_header_second_line_format = "{{$6%b$9}{ [$6%y$9]}}|{%D}"
+ song_list_format = "{$3%n │ $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6 │ %b$9}{$3 │ %l$9}"
+ user_interface = "alternative"
+ default_place_to_search_in = "database"
+
+# visualizer
+visualizer_data_source = "/tmp/mpd.fifo"
+visualizer_output_name = "my_fifo"
+visualizer_in_stereo = "yes"
+#visualizer_type = "spectrum"
+visualizer_type = "ellipse"
+#visualizer_type = "wave_filled"
+visualizer_look = "+|"
+
+## Navigation ##
+cyclic_scrolling = "yes"
+header_text_scrolling = "yes"
+jump_to_now_playing_song_at_start = "yes"
+lines_scrolled = "2"
+
+## Other ##
+system_encoding = "utf-8"
+regular_expressions = "extended"
+
+## Selected tracks ##
+selected_item_prefix = "* "
+discard_colors_if_item_is_selected = "no"
+
+## Seeking ##
+incremental_seeking = "yes"
+seek_time = "1"
+
+## Visivility ##
+header_visibility = "yes"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+progressbar_look =  "=>-"
+#progressbar_boldness = "yes"
+progressbar_elapsed_color = "white"
+
+now_playing_prefix = "> "
+song_status_format = " $2%a $4⟫$3⟫ $8%t $4⟫$3⟫ $5%b "
+autocenter_mode = "yes"
+centered_cursor = "yes"
+
+# Misc
+display_bitrate = "yes"
+# enable_window_title = "no"
+follow_now_playing_lyrics = "yes"
+ignore_leading_the = "yes"
+empty_tag_marker = ""
+### menjalankan mpd ncmpcpp ###
+$ mpd
+$ ncmpcpp
+
+++akhir kata selesai++

@@ -1,0 +1,33 @@
+// download image dari hub.doker.com
+contoh:
+==> docker image pull ubuntu:latest
+
+// cek docker image yang terinstall
+==> docker image ls
+
+## membuat container di docker
+
+//membuat container
+docker container create --name contohubuntu ubuntu:latest
+
+// menjalankan container
+docker container start contohubuntu
+
+//cek docker container running
+docker container ls
+
+//stop docker container
+docker container stop contohubuntu
+
+//remove docker container
+docker container rm contohubuntu
+
+//baca log container
+docker container logs contohubuntu
+
+
+
+
+
+
+

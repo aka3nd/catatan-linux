@@ -1,0 +1,45 @@
+#### install artix linux ###
+
+1. buat fartisi
+contoh:
+
+mkfs.fat -F32 /dev/sda1     >>> fartisi efi
+mkswap /dev/sda2            >>> fartisi swap
+mkfs.ext4 /dev/sda3         >>> fartisi /
+mkfs.ext4 /dev/sda4         >>> fartisi home
+
+2.mount fartisi
+contoh
+
+mount /dev/sda3 /mnt
+mkdir -p /mnt/efi
+mkdir -p /mnt/home
+
+mount /dev/sda1 /mnt/efi
+mount /dev/sda4 /mnt/home
+
+swapon /dev/sda2
+
+3.install base system
+contoh: dalam kasus ini menggunakan base runit
+
+basestrap /mnt base base-devel runit elogind-runit
+
+4.install kernel
+
+basestrap /mnt linux linux-firmware net-tools networkmanager openssh nano
+
+5.generate fstab
+
+fstab -U /mnt >> /mnt/etc/fstab
+
+6.change-root
+
+artix-chroot /mnt
+
+
+
+
+
+
+

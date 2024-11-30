@@ -1,0 +1,16 @@
+===> download file java di https://jdk.java.net/
+
+===> extract file hasil download tadi dengan mengetik di terminal: tar -zxf manafilejava.tar.gz
+dalam kasus ini saya menggunakan openjdk versi 17 jadi perintahnya adalah:
+tar -zxf openjdk-18_linux-x64_bin.tar.gz
+
+===> saya akan menaruh hasil extract file java tadi di folder opt,jadi perintahnya
+sudo mv jdk-18 /opt/
+
+===> edit file zshrc (atau bashrc bila menggunakan bash) dengan mengetik:
+
+nano ~/.zshrc
+tambahkan parameter berikut di zshrc
+export JAVA_HOME="/opt/jdk-19/"
+export PATH="$PATH:$JAVA_HOME/bin""
+lalu save

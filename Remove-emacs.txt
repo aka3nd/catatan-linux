@@ -1,0 +1,2 @@
+sudo apt-get remove emacs emacs23 emacs24 emacs25 emacs26 \
+                    emacs-bin-common emacs-common emacs-el 

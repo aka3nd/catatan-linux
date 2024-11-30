@@ -1,0 +1,5 @@
+mengatasi error: GPGME error: No data di arch linux
+
+cukup menghapus sync
+
+sudo pacman -rf /var/lib/pacman/sync

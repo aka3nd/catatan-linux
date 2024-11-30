@@ -1,0 +1,20 @@
+### menggunakan perintah systemctl ####
+
+===>> menjalankan service
+$ sudo systemctl start namaaplikasi
+
+===>> menghentikan service
+$ sudo systemctl stop namaaplikasi
+
+===>> merestat service
+$ sudo systemctl restart namaaplikasi
+
+===>> memuat ulang service
+$ sudo systemctl reload namaaplikasi
+
+### mengaktifkan/menonaktifkan layanan(service) ###
+$ sudo systemctl enable namaaplikasi
+$ sudo systemctl disable namaaplikasi
+
+### memeriksa status layanan(service) ###
+$ systemctl status namaaplikasi

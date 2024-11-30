@@ -1,0 +1,7 @@
+### mengatasi sound ###
+
+install paket berikut:
+$ sudo pacman -S pulseaudio alsa-utils pulseaudio-alsa pavucontrol
+
+lalu reboot:
+$ sudo reboot

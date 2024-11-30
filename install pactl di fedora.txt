@@ -1,0 +1,4 @@
+cara cek pactl
+
+=> install pulseaudio-utils
+

@@ -1,0 +1,14 @@
+===> mengatasi brightness reset sesudah restar(reboot)
+===> destop xfce dengan prosesor amd
+
+1.==> tambahkan kernel parameter pada:
+/etc/default/grub
+
+acpi_backlight=video
+acpi_backlight=vendor
+acpi_backlight=native
+
+catatan: pilih salah satu parameter(coba satu satu)
+
+2.==> sudo update-grub
+3.==> sudo reboot

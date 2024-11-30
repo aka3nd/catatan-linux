@@ -1,0 +1,7 @@
+===>> masuk ke mode root
+
+===>> install sudo, dengan perintah # apt install sudo
+
+===>> masuk directory sudoers dengan perintah, nano /etc/sudoers
+
+===>> tambahkan parameeter user di bawah root

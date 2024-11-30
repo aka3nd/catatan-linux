@@ -1,0 +1,23 @@
+Install xserver-xorg-input-libinput:
+
+# apt install xserver-xorg-input-libinput
+
+### masuk mode root ###
+
+### buat folder mkdir /etc/X11/xorg.conf.d
+### masuk ke /etc/X11/xorg.conf.d
+
+create file 40-libinput.conf dengan mengcopas di bawah ke terminal linux:
+
+echo 'Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+        Option "Tapping" "on"
+EndSection' > /etc/X11/xorg.conf.d/40-libinput.conf
+
+##resttar your dm
+systemctl restart lightdm
+
+source: https://unix.stackexchange.com/questions/337008/activate-tap-to-click-on-touchpad

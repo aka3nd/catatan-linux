@@ -1,0 +1,14 @@
+### reset panel dafault ###
+
+==> shutdown this panel first:
+$ xfce4-panel --quit
+==> kill the xfce4 configuration daemon:
+$ pkill xfconfd
+==> first delete setting for the panel:
+$ rm -rf ~/.config/xfce4/panel
+==> clear out the setting forxfconfd:
+$ rm -rf ~/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+==> restart the panel,run 
+$ xfce4-panel
+
+source : https://forums.linuxmint.com/viewtopic.php?t=297772

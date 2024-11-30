@@ -1,0 +1,105 @@
+### tutorial install arch ###
+
+### buat partisi ###
+cfdisk
+contoh
+/dev/sda1 1gb efi
+/dev/sda2 2gb swap
+/dev/sda3 27  /
+
+## create partisi ##
+
+mkfs.fat -F32 /dev/sda1
+mkswap /dev/sda2
+mkfs.ext4 /dev/sda3
+
+## mount ##
+mount terlebih dulu partisi root (/)
+mount /dev/sda3 /mnt
+buat folder efi
+mkdir /mnt/efi
+mount fartisi efi ke folder efi
+mount /dev/sda1 /mnt/efi
+lalu aktipkan swap
+swapon /dev/sda2
+
+### install base system ###
+pacstrap /mnt/ base linux linux-firmware net-tools networkmanager network-manager-applet openssh nano
+
+### create fstab###
+genfstab -U /mnt >> /mnt/etc/fstab
+
+## cek fstab ## (bila ingin lihat sukses apa belum)
+cat /mnt/etc/fstab
+
+## masuk chroot ##
+arch-chroot /mnt
+
+### set utf language ###
+nano /etc/locale.gen
+lalu pilih:
+en_US.UTF-8 UTF-8 (hilangkan tanda pagar didepan)
+lalu save:
+tekan ctrl + x , lalu y , terus tekan enter
+
+### generete locale #
+locale-gen
+
+echo "LANG=en_US.UTF-8" >> /etc/locale.conf
+atau bisa juga dengan nano
+nano /etc/locale.conf
+lalu masukan:
+LANG=en_US.UTF-8
+lalu tekan ctrl +x ,tekan y, lalu enter
+
+### set timezone ###
+ln -sf /usr/share/zoneinfo/asia/jakarta /etc/localtime
+lalu ketik:
+hwclock --systohc --utc
+
+### create host name ###
+
+echo "anjay" > /etc/hostname
+
+###pasword root ###
+
+passwd
+
+### install grub (for efi partisi) ###
+pacman -S grub efibootmgr
+grub-install --efi-directory=/efi
+
+### generate grub###
+grub-mkconfig -o /boot/grub/grub.cfg
+
+###proses selesai ####
+exit
+reboot
+
+
+####pix truobe grub bash-like minimal ###
+*masuk live iso 
+*mount partisi efi
+contoh mount /dev/sda1 /mnt/efi
+mount partisi root(/)
+contoh mount /dev/sda3 //mnt
+*pindah root
+arch-chroot /mnt
+*reconfigurasi boot
+grub-mkconfig -o /boot/grub/grub.cfg
+exit
+reboot
+
+
+
+
+
+
+
+
+
+
+
+
+
+

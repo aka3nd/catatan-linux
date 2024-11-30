@@ -1,0 +1,10 @@
+cara ganti shell terminal linux
+
+$ chsh -s /bin/zsh
+$ sudo chsh -s /bin/zsh
+$ sudo reboot
+
+perintah diatas harus dijalan 2 kali agar ketika kamu masuk
+kemode root,shell yg aktif juga sama
+
+catatan: zsh bisa di ganti bash

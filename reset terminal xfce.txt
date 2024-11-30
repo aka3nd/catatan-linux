@@ -1,0 +1,4 @@
+++++ reset default xfce terminal ++++
+
+cd /.config/xfce/terminal/terminalrc
+rm -rf terminalrc

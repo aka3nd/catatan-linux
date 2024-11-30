@@ -1,0 +1,8 @@
+Failed to install package to new root di archlinux
+
+
+1.pacman-key --init && pacman-key --populate archlinux
+
+2.lalu jalankan ulang pacstrap /mnt blabla....
+
+source: https://bbs.archlinux.org/viewtopic.php?id=182856

@@ -1,0 +1,3 @@
+menambah user
+
+sudo useradd -m nama

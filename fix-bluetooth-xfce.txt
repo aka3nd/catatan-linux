@@ -1,0 +1,15 @@
+### fix bluetoot di xfce sesudah frensh install arch ###
+
+== >> install paket berikut:
+$ sudo pacman -S bluez bluez-utils blueman
+
+== >> masuk config bluetoot:
+$ sudo vim /etc/bluetooth/main.conf
+
+== >> search autoenable menjadi true:
+AutoEnable=true  # hilangkan tanda pagar
+
+== >> jalankan dan enable service:
+$ sudo systemctl start bluetooth.service
+$ sudo systemctl enable bluetooth.service
+$ sudo reboot

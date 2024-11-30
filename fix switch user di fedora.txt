@@ -1,0 +1,3 @@
+### cukup mudah cukup install saja
+
+dnf install util-linux

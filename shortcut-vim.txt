@@ -1,0 +1,12 @@
+ ###⋅save⋅/exit⋅####↴
+  ↴
+  :w⋅=⋅write(save)↴
+  :q⋅=⋅quit⋅(exit)↴
+  :q!⋅=⋅quit⋅ignore⋅(exit⋅tanpa⋅menyimpan⋅perubahan)↴
+  ↴
+  ###⋅navigasi⋅###↴
+  h⋅=⋅cursor⋅kekiri↴
+  l⋅=⋅cursor⋅kekanan↴
+  j⋅=⋅cursor⋅ke⋅bawah↴
+  k⋅=⋅cursor⋅ke⋅atas↴
+

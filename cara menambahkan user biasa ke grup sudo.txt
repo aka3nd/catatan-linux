@@ -1,0 +1,8 @@
+==> buka terrminal linux
+
+==> ketik: nano /etc/sudoers
+dibawah root ketik
+ketikan user =  ALL(ALL:ALL) ALL
+
+CATATAN: user diganti nama pengguna kalian contoh nya otong
+         otong = ALL(ALL:ALL) ALL

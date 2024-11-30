@@ -1,0 +1,25 @@
+### mengatasi andorid tidak terbaca ###
+
+masalah : android tidak terdetect(terbaca) dilinux arch
+dengan desktop xfce
+
+solusi ada beberapa opsi:
+
+### for archlinux dan turunan
+
+1. install android-file-transfer
+   $ sudo pacman -S android-file-transfer
+
+2 install gvfs-mtp
+   $ pacman -S gvfs-mtp
+
+
+### for debian dan turunan
+
+1.sudo apt install gvfs-backends gvfs
+
+##################
+
+dari kedua cara diatas yg work(bisa), adalah cara ke 2 di saya,
+
+bila perlu install nautilus: sudo pacman -S nautilus

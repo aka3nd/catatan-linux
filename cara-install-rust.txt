@@ -1,0 +1,19 @@
+### cara install rust-lang ###
+
+>>update debian
+
+sudo apt update && sudo apt upgrade -y
+
+>>install dependence
+
+sudo apt install curl build-essential gcc make -y
+
+>>install rust
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+>> restart laptop/pc
+
+>> remove rust
+
+rustup self uninstall

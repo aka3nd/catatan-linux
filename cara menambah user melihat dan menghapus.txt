@@ -1,0 +1,14 @@
+dua cara menambahkan user baru dilinux:
+
+===> cara pertama:
+sudo adduser namapengguna
+
+===> cara kedua:
+sudo useradd namapengguna
+sudo passwd namapengguna
+
+===> menghapus user:
+userdel -r namapengguna
+
+===> melihat semua user yg tersimpan:
+cat /etc/passwd

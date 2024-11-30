@@ -1,0 +1,20 @@
+### fix brightness window manager i3wm/bspwm ###
+
+cek brignessctll apakah udah terinstall/belum,
+jika belum install dulu,
+
+for i3:
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set 5%+ # increase screen brightness
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%- # decrease screen brightness
+
+for bspwm(taruh di config sxhkdrc)
+#Brightness up
+XF86MonBrightnessUp
+    brightnessctl set 5%+
+
+#Brightness down
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
+
+cource link : https://arcolinuxforum.com/viewtopic.php?t=73

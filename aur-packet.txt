@@ -1,0 +1,12 @@
+### install packet aur ####
+
+git clone namafile.git
+
+==> masuk folder namafile
+$cd namafile
+
+==> compile file
+$ makepkg
+
+==> install packet
+$ sudo pacman -U namapaket.xz

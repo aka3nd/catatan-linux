@@ -1,0 +1,26 @@
+### fix booting freeze ####
+
+catatan: cara ini dilakukan saat ada masalah di kernel 5.18.15,
+dan mengakibatkan hang atau stuck di saat booting.
+
+==> masuk live usb arch linux
+
+==> mount partisi efi dan partisi root, contoh:
+    mount /dev/sda3 /mnt      #fartisi root
+    mount /dev/sda3 /mnt/efi    # fartisi efi
+
+==> change root/pindah root
+    arch-chroot /mnt
+
+==> edit file grub dengan perintah:
+    sudo nano /etc/default/grub
+
+==> tambahkan konfigurasi spectre_v2=off
+    GRUB_CMDLINE_LINUX_DEFAULT="spectre_v2=off loglevel=3 quiet"
+
+==> save konfigurasi:
+    grub-mkconfig -o /boot/grub/grub.cfg
+
+==> exit lalu reboot:
+    exit
+    reboot
