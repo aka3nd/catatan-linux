@@ -1,0 +1,4 @@
+### cara menghapus icon di menu xfce ###
+
+masuk folder /usr/share/applications
+lalu sudo rm namaapps.desktop
