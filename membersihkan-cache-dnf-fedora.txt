@@ -1,0 +1,2 @@
+Bersihkan cache untuk memastikan DNF memperbarui daftar mirror:
+sudo dnf clean all
