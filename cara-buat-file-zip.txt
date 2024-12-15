@@ -1,0 +1,6 @@
+zip file.zip namafile
+
+atau
+
+compress folder
+zip -r namafile.zip namafolder
