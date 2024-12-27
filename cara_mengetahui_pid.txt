@@ -1,0 +1,5 @@
+gunakan xprop lalu arahkan ke apps yang digunakan.
+lalu cari bagian _NET_WM_PID(CARDINAL)=nomor pid
+
+lalu ps -p nopid -o pid,cmd
+contoh: ps -p 4497 -o pid,cmd
