@@ -1,0 +1,18 @@
+# pertama cek backlight yg digunakan
+	ls /sys/class/backlight/
+	radeon_bl0@
+
+# kedua start backlight tersebut
+	sudo systemctl start systemd-backlight@backlight:radeon_bl0.service
+
+# ketiga buat symbolik link agar di jalankan saat booting
+	sudo ln -s /etc/systemd/system/systemd-backlight@backlight:radeon_bl0.service /etc/systemd/system/multi-user.target.wants/
+
+# lalu reboot dan cek status symbolik link
+	systemctl status systemd-backlight@backlight:radeon_bl0.service
+
+	###### JIKA INGIN MENGHAPUS SYMBOLICLINK ######
+
+# jika ingin mengembalikan seperti semula(hapus symboliclink
+	sudo rm /etc/systemd/system/multi-user.target.wants/systemd-backlight@backlight:radeon_bl0.service
+# lalu reboot
