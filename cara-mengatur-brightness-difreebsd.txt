@@ -1,0 +1,5 @@
+#cek acpi
+sysctl hw.acpi.video
+
+lalu ubah sesuai keinginan:
+sudo sysctl hw.acpi.video.lcd0.brightness=30
