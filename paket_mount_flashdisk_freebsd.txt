@@ -1,0 +1,2 @@
+=> install paket untuk mount flashdrive(flashdisk)
+sudo pkg install fusefs-ntfs fusefs-exfat
