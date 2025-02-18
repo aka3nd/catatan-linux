@@ -1,0 +1,25 @@
+### scan wifi ###
+>> ifconfig wlan0 scan
+
+### connect wifi
+~ ▶︎︎ sudo wpa_passphrase "nama_wifi" "password_wifi" |sudo tee /etc/wpa_supplicant.conf
+### atau dengan perintah berikut
+sudo sh -c 'wpa_passphrase "nama_wifi" "passwor_wifi" > /etc/wpa_supplicant.conf'
+
+### jalankan wpa_supplicant ###
+sudo wpa_supplicant -B -i wlan0 -c /etc/wpa_supplicant.conf
+
+### agar dapat ip(biar bisa internet) ###
+sudo dhclient wlan0
+
+### atau dengan dhcpcd ###
+sudo dhcpcd wlan0
+
+
+### tambahan ###
+restar jaringan
+sudo service netif restart
+
+### mematikan dan menghidupkan interface
+sudo ifconfig wlan0 down
+sudo ifconfig wlan0 up
