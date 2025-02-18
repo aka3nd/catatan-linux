@@ -1,0 +1,3 @@
+jalankan:
+
+ntpdate -u pool.ntp.org
