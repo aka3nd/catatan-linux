@@ -1,0 +1,8 @@
+### mengatasi display setting yang otomatis terbuka saat brightness ditekan.
+
+## masuk ke setting ==> keyboard ==>> shortcut 
+## hapus shortcut yang ada entri berikut:
+xfce4-display-settings --minimal
+xfce4-display-settings
+xfce4-display-settings -m
+
