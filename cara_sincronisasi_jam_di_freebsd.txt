@@ -1,3 +1,7 @@
-jalankan:
+jalankan diterminal:
 
-ntpdate -u pool.ntp.org
+### region global ###
+sudo ntpdate -u pool.ntp.org
+
+### untuk region indonesia ###
+sudo ntpdate -u id.pool.ntp.org
