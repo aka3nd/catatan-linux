@@ -1,0 +1,5 @@
+cara mouunt android difreebsd
+
+sudo  jmtpfs -o allow_other namafolder
+
+contoh: sudo jmtpfs -o allow_other ~/andorid
