@@ -1,0 +1,10 @@
+cara extract file iso.xz
+
+istall xz
+sudo pkg install xz
+
+lalu:
+xz -d namaiso.xz  <=== setelah didekompresi file asli hilang diganti file iso
+
+atau:
+xz -dk namaiso.xz <=== setelah diextract tidak hilang
