@@ -3,3 +3,7 @@
 >> install xfce: sudo pkg install xfce
 
 jangan remove plugin powermanager icon di taskbar
+
+opsional
+sudo pw groupmod video -m NAMEUSER
+sudo pw groupmod operator -m NAMEUSER
