@@ -1,0 +1,5 @@
+>> disable semua,power manager xfce,
+>> uninstall upower: sudo pkg delete upower,
+>> install xfce: sudo pkg install xfce
+
+jangan remove plugin powermanager icon di taskbar
