@@ -1,0 +1,8 @@
+#cara restart interface wlan0
+doas service wpa_supplicant restart wlan0
+
+#matikan interface
+doas ifconfig wlan0 down
+
+#nyalakan interface
+doas ifconfig wlan0 up
