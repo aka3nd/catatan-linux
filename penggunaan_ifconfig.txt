@@ -1,0 +1,2 @@
+mengaktifkan wifi doas ifconfig wlan0 up
+menonaktifkan wifi doas ifconfig wlan0 down
