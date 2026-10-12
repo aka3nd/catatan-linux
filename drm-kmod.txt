@@ -1,0 +1,2 @@
+//drm-kmod
+doas pkg install drm-66-kmod
